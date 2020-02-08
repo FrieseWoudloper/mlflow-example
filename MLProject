@@ -1,0 +1,8 @@
+name: MyTrain
+
+entry_points:
+  main:
+    parameters:
+      alpha: {type: float, default: 0.5}
+      lambda: {type: float, default: 0.5}
+    command: "RScript train.R -r {alpha} {lambda}"
