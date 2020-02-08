@@ -3,9 +3,6 @@
 library(mlflow)
 library(glmnet)
 
-args <- commandArgs()
-cat(args, sep = "\n")
-
 wine_file <- pins::pin("https://raw.githubusercontent.com/rstudio/mlflow-example/master/wine-quality.csv")
 
 train <- read.csv(wine_file)
