@@ -1,8 +1,8 @@
-name: MyTrain
+name: iris
 
 entry_points:
   main:
     parameters:
-      alpha: {type: float, default: 0.5}
-      lambda: {type: float, default: 0.5}
-    command: "RScript train.R -r {alpha} {lambda}"
+      cp: {type: float, default: 0.02}
+      maxdepth: {type: int, default: 13}
+    command: "Rscript train.R -P cp={cp} maxdepth={maxdepth}"
